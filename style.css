@@ -12,5 +12,24 @@ body {
   color: hsl(0, 0%, 100%); */
 }
 
+.main {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main div {
+    border: 1px red solid;
+}
+
+.main > div {
+    grid-column: span 3;
+    width: 100%;
+}
+
+.main :last-child {
+    grid-column: span 1;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
