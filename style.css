@@ -22,6 +22,11 @@ div {
     border-radius: 8px;
 }
 
+h2 {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
 .main .three-col {
     grid-column: span 3;
     width: 100%;
@@ -34,14 +39,14 @@ div {
     margin-bottom: 1rem;
 }
 
-.main .three-col .top :first-child {
+.main .three-col .top .first {
     background-color: #7541c8;
     color: #fff;
     grid-column: span 2;
     padding: 1.5rem;
     box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
 }
-.main .three-col .top :last-child {
+.main .three-col .top .last {
     background-color: #48556a;
     color: #fff;
     grid-column: span 1;
@@ -55,13 +60,13 @@ div {
     gap: 1rem;
 }
 
-.main .three-col .bottom :first-child {
+.main .three-col .bottom .first {
     background-color: #fff;
     grid-column: span 1;
     padding: 1.5rem;
     box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
 }
-.main .three-col .bottom :last-child {
+.main .three-col .bottom .last {
     background-color: #19212e;
     color: #fff;
     grid-column: span 2;
@@ -76,11 +81,6 @@ div {
     box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
 }
 
-.main .one-col h2 {
-    font-size: 20px;
-    margin: 1rem 0;
-}
-
 .avatar {
     display: flex;
     gap: 1rem;
@@ -90,8 +90,6 @@ div {
     font-size: 18px;
     margin: 0;
 }
-
-
 
 img {
     width: 50px;
