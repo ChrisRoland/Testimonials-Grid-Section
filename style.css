@@ -9,13 +9,14 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   background-color: #e7eaee;
+  font-size: 13px;
 }
 
 .main {
-    margin: 4rem 8rem;
+    margin: 4rem 9rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 div {
@@ -23,8 +24,11 @@ div {
 }
 
 h2 {
-    font-size: 20px;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
     margin: 1rem 0;
+    z-index: 1;
 }
 
 .main .three-col {
@@ -35,50 +39,67 @@ h2 {
 .main .three-col .top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
+.quote {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
+
+.quote img {
+    height: 110px;
+    width: 110px;
+    border-radius: 0;
+}
 .main .three-col .top .first {
+    position: relative;
     background-color: #7541c8;
     color: #fff;
     grid-column: span 2;
-    padding: 1.5rem;
-    box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
+    padding: 2.5rem;
+    box-shadow: 25px 45px 25px rgba(0, 0, 0, 0.16);
 }
+
 .main .three-col .top .last {
     background-color: #48556a;
     color: #fff;
     grid-column: span 1;
-    padding: 1.5rem;
-    box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
+    padding: 2.5rem;
+    box-shadow: 25px 45px 25px rgba(0, 0, 0, 0.16);
 }
 
 .main .three-col .bottom {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    z-index: 1;
 }
 
 .main .three-col .bottom .first {
     background-color: #fff;
     grid-column: span 1;
-    padding: 1.5rem;
-    box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
+    padding: 2.5rem;
+    box-shadow: 25px 45px 25px rgba(0, 0, 0, 0.16);
 }
 .main .three-col .bottom .last {
     background-color: #19212e;
     color: #fff;
     grid-column: span 2;
-    padding: 1.5rem;
-    box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
+    padding: 2.5rem;
+    box-shadow: 25px 45px 25px rgba(0, 0, 0, 0.16);
 }
 
 .main .one-col {
+    position: relative;
     background-color: #fff;
     grid-column: span 1;
-    padding: 1.5rem;
-    box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.16);
+    padding: 2.5rem;
+    box-shadow: 25px 45px 25px rgba(0, 0, 0, 0.16);
+    z-index: 1;
 }
 
 .avatar {
@@ -88,12 +109,13 @@ h2 {
 
 .avatar h3 {
     font-size: 18px;
+    font-weight: 500;
     margin: 0;
 }
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
